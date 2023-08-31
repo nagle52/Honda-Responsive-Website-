@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="./assest/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="./assest/css/style.css">
+
+    <title>Doucment</title>
+</head>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="https://www.hondacarindia.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.35e4c17e.png&w=256&q=75">
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">Featured</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">New</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./Login From" class="nav__link">Login</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x' ></i>
+                </div>
+             
+            </div>
+
+            <div class="nav__btns">
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+
+                <div class="nav__shop" id="cart-shop">
+                    <i class='bx bx-shopping-bag' ></i>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt' ></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+        <i class='bx bx-x cart__close' id="cart-close"></i>
+
+        <h2 class="cart__title-center">My Cart</h2>
+
+        <div class="cart__container">
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/45951/amaze-facelift-exterior-right-front-three-quarter.jpeg?isig=0&q=75&q=75" alt="No image" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Honda Amaze</h3>
+                    <span class="cart__price">₹7 Lakh</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/134287/2023-city-exterior-right-front-three-quarter.jpeg?isig=0&q=75&q=75" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Honda City</h3>
+                    <span class="cart__price">₹11 Lakh</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cart__card">
+                <div class="cart__box">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/134113/new-wr-v-exterior-left-front-three-quarter-2.jpeg?isig=0&q=75&q=75" alt="" class="cart__img">
+                </div>
+
+                <div class="cart__details">
+                    <h3 class="cart__title">Honda WR-V</h3>
+                    <span class="cart__price">₹9 Lakh</span>
+
+                    <div class="cart__amount">
+                        <div class="cart__amount-content">
+                            <span class="cart__amount-box">
+                                <i class='bx bx-minus' ></i>
+                            </span>
+
+                            <span class="cart__amount-number">1</span>
+
+                            <span class="cart__amount-box">
+                                <i class='bx bx-plus' ></i>
+                            </span>
+                        </div>
+
+                        <i class='bx bx-trash-alt cart__amount-trash' ></i>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="cart__prices">
+            <span class="cart__prices-item">3 items</span>
+            <span class="cart__prices-total">₹27 Lakh</span>
+        </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__img-bg">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb18noQ37ZL6MyL02Yq4VxEhJMMVFXyvRQTQ&usqp=CAU" alt="no image" class="home__img">
+                    
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        Facebook
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                        Twitter
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        Instagram
+                    </a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title">NEW CAR <br> COLLECTIONS </h1>
+                    <p class="home__description">
+                        Honda cars are very well-known for their long-lasting performance and low maintenance requirements, making them an excellent choice for any car enthusiast or any car owner. Honda's i-VTEC petrol engines have an outstanding reputation for being among the most refined and efficient on the market.
+                    
+
+                    <div class="home__btns">
+                        <a href="#" class="button button--gray button--small">
+                            Discover
+                        </a>
+
+                        <button class="button home__button">News Letter</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== FEATURED ====================-->
+        <section class="featured section container" id="featured">
+            <h2 class="section__title">
+                Featured
+            </h2>
+
+            <div class="featured__container grid">
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="https://cdn.pixabay.com/photo/2019/07/14/04/52/honda-4336169_640.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Head Lamp Honda City 2023 Car Headlight</h3>
+                        <span class="featured__price">₹25000</span>
+                    </div>
+
+                    <button class="button featured__button">Headlights | Lighting | My car dictionary
+                        The primary task of headlights on cars is to illuminate the roadway and facilitate fatigue-free and safe driving. Headlights and their light sources are thus vehicle components that are relevant to safety.</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="https://cdn.pixabay.com/photo/2017/11/06/14/51/honda-s2000-2923839_640.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Suede Carbon Style Steering Wheel</h3>
+                        <span class="featured__price">₹2500</span>
+                    </div>
+
+                    <button class="button featured__button">Low pressure in your tires: While a heavy steering wheel is almost always the result of a problematic or malfunctioning power steering system, it can also be caused by low air pressure in one or more of your tires.</button>
+                </article>
+
+                <article class="featured__card">
+                    <span class="featured__tag">Sale</span>
+
+                    <img src="https://cdn.pixabay.com/photo/2021/11/27/16/12/engine-6828424_640.jpg" alt="" class="featured__img">
+
+                    <div class="featured__data">
+                        <h3 class="featured__title">Honda GX 390 11 HP Petrol Engine</h3>
+                        <span class="featured__price">₹29998</span>
+                    </div>
+
+                    <button class="button featured__button">Honda's OverHead Valve (OHV) and OverHead Camshaft (OHC) designs enhance combustion efficiency, help to reduce fuel and oil consumption and ensure excellent thermal balance. Also the durability, reliability and service life of the engine is extended.</button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== STORY ====================-->
+        <section class="story section container">
+            <div class="story__container grid">
+                <div class="story__data">
+                    <h2 class="section__title story__section-title">
+                        Our Story
+                    </h2>
+
+                    <h1 class="story__title">
+                        Inspirational Car of <br> this year
+                    </h1>
+
+                    <p class="story__description">
+                        While other vehicles may start showing signs of ageing, Honda cars have been known to have a great build quality and reliable driving dynamics for years and years without fail. The longevity of Honda cars is evident in the Honda City, Honda CR-V and the Honda Accord.
+                    </p>
+
+                    <a href="#" class="button button--small">Discover</a>
+                </div>
+
+                <div class="story__images">
+                    <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/134287/city-exterior-front-view.jpeg?isig=0&q=75" alt="no image" class="story__img">
+                    <div class="story__square"></div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== PRODUCTS ====================-->
+        <section class="products section container" id="products">
+            <h2 class="section__title">
+                Products
+            </h2>
+
+            <div class="products__container grid">
+                <article class="products__card">
+                    <img src="https://imgd-ct.aeplcdn.com/1056x660/n/cw/ec/121943/verna-facelift-exterior-left-front-three-quarter.jpeg?isig=0&q=75" alt="no" class="products__img">
+
+                    <h3 class="products__title">Verna 2023</h3>
+                    <span class="products__price">₹10.96 - 17.38 Lakh</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/142515/elevate-exterior-left-front-three-quarter-4.jpeg?isig=0&q=75&q=75" alt="no" class="products__img">
+
+                    <h3 class="products__title">Honda Elevate</h3>
+                    <span class="products__price">10.00 - 17.00 Lakh</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/134287/2023-city-exterior-right-front-three-quarter.jpeg?isig=0&q=75&q=75" alt="" class="products__img">
+
+                    <h3 class="products__title">Honda City</h3>
+                    <span class="products__price">₹11.60 - 16.08 Lakh</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/45951/amaze-facelift-exterior-right-front-three-quarter.jpeg?isig=0&q=75&q=75" alt="" class="products__img">
+
+                    <h3 class="products__title">Honda Amaze</h3>
+                    <span class="products__price">₹7.07 - 9.68 Lakh</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+
+                <article class="products__card">
+                    <img src="https://imgd.aeplcdn.com/664x374/n/cw/ec/143275/city-hybrid-ehev-exterior-right-front-three-quarter.jpeg?isig=0&q=75&q=75" alt="" class="products__img">
+
+                    <h3 class="products__title">Honda City Hybrid eHEV</h3>
+                    <span class="products__price">₹18.92 - 20.42 Lakh</span>
+
+                    <button class="products__button">
+                        <i class='bx bx-shopping-bag'></i>
+                    </button>
+                </article>
+            </div>
+        </section>
+
+        <!--==================== TESTIMONIAL ====================-->
+        <section class="testimonial section container">
+            <div class="testimonial__container grid">
+                <div class="swiper testimonial-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                
+                                Honda Motor Co. (Japan) owns Acura and Honda. It partners with GM. And it formed an electric car company with Sony, called Sony Honda Mobility, that has the Afeela brand. Hyundai Motor Group (South Korea) owns Genesis, Hyundai, and Kia.
+                            </p>
+                            <h3 class="testimonial__date">Aug 26. 2023</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="https://media.istockphoto.com/id/681852506/photo/indianapolis-circa-april-2017-honda-motor-co-logo-and-sign-honda-manufactures-among-the-most.jpg?s=612x612&w=0&k=20&c=0c0-X3A5aHyG9czShNydjrnxFi7gpHa14ILkjgO4Ixw=" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Shubham Nagle</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Honda Motor Co. (Japan) owns Acura and Honda. It partners with GM. And it formed an electric car company with Sony, called Sony Honda Mobility, that has the Afeela brand. Hyundai Motor Group (South Korea) owns Genesis, Hyundai, and Kia.
+                            </p>
+                            <h3 class="testimonial__date">Aug 26. 2023</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="https://media.istockphoto.com/id/681852506/photo/indianapolis-circa-april-2017-honda-motor-co-logo-and-sign-honda-manufactures-among-the-most.jpg?s=612x612&w=0&k=20&c=0c0-X3A5aHyG9czShNydjrnxFi7gpHa14ILkjgO4Ixw=" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Shubham</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <div class="testimonial__quote">
+                                <i class='bx bxs-quote-alt-left' ></i>
+                            </div>
+                            <p class="testimonial__description">
+                                Honda Motor Co. (Japan) owns Acura and Honda. It partners with GM. And it formed an electric car company with Sony, called Sony Honda Mobility, that has the Afeela brand. Hyundai Motor Group (South Korea) owns Genesis, Hyundai, and Kia.
+                            </p>
+                            <h3 class="testimonial__date">Aug 26. 2023</h3>
+    
+                            <div class="testimonial__perfil">
+                                <img src="https://media.istockphoto.com/id/681852506/photo/indianapolis-circa-april-2017-honda-motor-co-logo-and-sign-honda-manufactures-among-the-most.jpg?s=612x612&w=0&k=20&c=0c0-X3A5aHyG9czShNydjrnxFi7gpHa14ILkjgO4Ixw=" alt="" class="testimonial__perfil-img">
+    
+                                <div class="testimonial__perfil-data">
+                                    <span class="testimonial__perfil-name">Shubham</span>
+                                    <span class="testimonial__perfil-detail">Director of a company</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next">
+                        <i class='bx bx-right-arrow-alt' ></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class='bx bx-left-arrow-alt' ></i>
+                    </div>
+                </div>
+
+                <div class="testimonial__images">
+                    <div class="testimonial__square"></div>
+                    <img src="https://media.istockphoto.com/id/1296003423/photo/2020-honda-cr-v-sport-utility-vehicles.jpg?s=612x612&w=0&k=20&c=HfXjLsYRms_vJY9uiZRYnA61X5zc60wh0rk4zXVDKrY=" alt="" class="testimonial__img">
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEW ====================-->
+        <section class="new section container" id="new">
+            <h2 class="section__title">
+                New Arrivals
+            </h2>
+            
+            <div class="new__container">
+                <div class="swiper new-swiper">
+                    <div class="swiper-wrapper">
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="https://media.zigcdn.com/media/model/2020/Jul/nsx-1_930x620.jpg" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Honda NSX</h3>
+                                <span class="new__price">₹1.00 Cr</span>
+                            </div>
+    
+                            <button class="button new__button">While the last Acura NSX has rolled off the assembly line, it won't be relinquished to automotive history. The Japanese luxury brand will be working up a third-generation supercar, this one going all-electric, according to brand chief Jon Ikeda.</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/WR-V-2023/9420/1667390142668/front-left-side-47.jpg?tr=w-456" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Honda WR-V</h3>
+                                <span class="new__price">₹8 Lakh</span>
+                            </div>
+    
+                            <button class="button new__button">Honda WR-V is a seater SUV. The Honda WR-V is expected to launch in India in August 2024. The Honda WR-V will rival Nexon, Brezza and Magnite. Expect prices to start from 8 Lakh.</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/City-Hybrid-2023/9713/1677745369245/front-left-side-47.jpg?tr=w-456" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Honda City Hybrid</h3>
+                                <span class="new__price">₹18.89 - 20.39 Lakh</span>
+                            </div>
+    
+                            <button class="button new__button">Honda City Hybrid is a 5 seater Sedan available in a price range of Rs. 18.89 - 20.39 Lakh*. It is available in 2 variants, a 1498 cc, / and a single Automatic transmission. Other key specifications of the City Hybrid include a kerb weight of 1261-1280 kg and boot space of Liters. The City Hybrid is available in 6 colours. Over 34 User reviews basis Mileage, Performance, Price and overall experience of users for Honda City Hybrid.</button>
+                        </article>
+
+                        <article class="new__card swiper-slide">
+                            <span class="new__tag">New</span>
+    
+                            <img src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Honda/Amaze/10519/1689589132736/front-left-side-47.jpg?imwidth=340&impolicy=resize" alt="" class="new__img">
+    
+                            <div class="new__data">
+                                <h3 class="new__title">Honda Amaze</h3>
+                                <span class="new__price">₹9.66 Lakh</span>
+                            </div>
+    
+                            <button class="button new__button">Honda Amaze is a 5 seater Sedan available in a price range of Rs. 7.05 - 9.66 Lakh*. It is available in 5 variants, a 1199 cc, / and 2 transmission options: Automatic & Manual. Other key specifications of the Amaze include a kerb weight of 945-957 and boot space of 420 Liters. The Amaze is available in 5 colours. Over 411 User reviews basis Mileage, Performance, Price and overall experience of users for Honda Amaze.</button>
+                        </article>                       
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== NEWSLETTER ====================-->
+        <section class="newsletter section container">
+            <div class="newsletter__bg grid">
+                <div>
+                    <h2 class="newsletter__title">Subscribe Our <br> Newsletter</h2>
+                    <p class="newsletter__description">
+                        Don't miss out on your discounts. Subscribe to our email 
+                        newsletter to get the best offers, discounts, coupons, 
+                        gifts and much more.
+                    </p>
+                </div>
+
+                <form action="" class="newsletter__subscribe">
+                    <input type="email" placeholder="Enter your email" class="newsletter__input">
+                    <button class="button">
+                        SUBSCRIBE
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">Our information</h3>
+
+                <ul class="footer__list">
+                    <li>Contact No. - 1800113121 </li>
+                    <li>Bhopal 462046</li>
+                    <li>customer_relations@hondacarindia.com</li>
+                </ul>
+            </div>
+            <div class="footer__content">
+                <h3 class="footer__title">About Us</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="https://www.hondacarindia.com/contact-us/customer-care" class="footer__link">Support Center</a>
+                    </li>
+                    <li>
+                        <a href="https://www.hondacarindia.com/contact-us" class="footer__link">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="https://hondainamerica.com/news/honda-2018-production-results-show-rise-in-u-s-auto-production/" class="footer__link">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer__link">@Copy Right</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Product</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="https://www.topgear.com/car-news/electric/hondas-adorable-electric-car-officially-sale" class="footer__link">Road Car</a>
+                    </li>
+                    <li>
+                        <a href="https://www.hondacarindia.com/shop/new-car-booking" class="footer__link">Mountain Car</a>
+                    </li>
+                    <li>
+                        <a href="https://global.honda/innovation/technology/automobile/electric-vehicles.html" class="footer__link">Electric</a>
+                    </li>
+                    <li>
+                        <a href="https://www.indiamart.com/proddetail/car-accessories-for-honda-brio-10274691630.html" class="footer__link">Accesories</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Social</h3>
+
+                <ul class="footer__social">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter' ></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-instagram' ></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <span class="footer__copy">&#169; Honda Car. All rigths reserved</span>
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up"> 
+        <i class='bx bx-up-arrow-alt scrollup__icon' ></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="./assest/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="./assest/js/main.js"></script>
+</body>
+</html>
